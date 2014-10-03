@@ -157,11 +157,14 @@ header nav ul li a div span{
     display: inline;
     padding-top: 65px;
     padding-left: 30px;
+    width: 615px;
+    height: 160px;
     color: #5d5d5d;
 }
 
 .titulo_slide {    
     font-size: 28px;
+    display: block;
 }
 
 .descricao_slide {
@@ -488,13 +491,13 @@ address p{
 
 }
 
-    #featured > img,
-    #featured > div,
-    #featured > a {
-        display: none;
-    }
+#featured > img,
+#featured > div,
+#featured > a {
+    display: none;
+}
 /* CONTAINER
-   ================================================== */
+================================================== */
 
 /* ================= CONTATO ================= */
 
@@ -509,7 +512,7 @@ address p{
 .bannerImg{
     float: left;
     margin-left: 194px;
-   /*  background-image: url("../images/07-servicos_03.png"); */
+    /*  background-image: url("../images/07-servicos_03.png"); */
 /*    opacity: 0.30;
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 30);
     filter: alpha(opacity = 30);*/

@@ -1,15 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FTI Tecnologia</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic' rel='stylesheet' type='text/css'>
-  <%= csrf_meta_tags %>
+	<title>FTI Tecnologia</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic' rel='stylesheet' type='text/css'>
+	<%= csrf_meta_tags %>
 </head>
 <body>
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+	<!-- BARRA TOPO -->
+	<div id="barra-topo">
+		<div class="content">
+			<div class="box-topo">
+				<div class="right">
+					<div class="topo-informacoes">
+						<div id="topo-informacao-telefone" style="display:none;">
+							<a href="tel:+55433323-1163">
+								<span class="span-telefone">43 <b>3323-1163</b></span>
+							</a>                
+							<span class="span-descricao">Atendimento de seg. a sexta</span>             
+						</div>
 
-<%= yield %>
+						<div id="topo-informacao-email">
+							<a href="mailto:contato@ftitecnologia.com.br">contato@ftitecnologia.com.br</a>
+						</div>
+					</div>
+					<div class="topo-icones">
+						<div id="topo-ico-email">
+							<a href="mailto:contato@ftitecnologia.com.br">
+								<img src="/images/email.png" alt="email">
+							</a>
+						</div>
+						<div id="topo-ico-tel">							
+							<img src="/images/telefone.png" alt="telefone">			
+						</div>
+					</div>
+
+				</div>
+			</div>		
+		</div>	
+	</div>
+
+	<!-- HEADER -->
+	<header>
+		<div class="content">
+			<a href="index.html">
+				<img src="/images/logo.png" alt="logo" id="logo">
+			</a>            
+			<img src="/images/sombra-menu.png" class="sombra-menu" alt="sombra-menu">
+
+			<div class="texto-logo">
+				<p>SOLUÇÕES INTEGRADAS EM T.I</p>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="trajetoria.html">
+							<div>
+								<span>TRAJETÓRIA</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="clientes.html">
+							<div>
+								<span>CLIENTES</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="solucoes.html">
+							<div>
+								<span>SOLUÇÕES</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="produtos.html">
+							<div>
+								<span>PRODUTOS</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="equipe.html">
+							<div>
+								<span>EQUIPE</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="quemsomos.html">
+							<div>
+								<span>QUEM SOMOS</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="eventos.html">
+							<div>
+								<span>EVENTOS</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="contato.html">
+							<div>
+								<span> CONTATO</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<%= yield %>
+
+	<!-- FOOTER -->	
+	
+	<div id="footer">
+		<img src="/images/sombra-divisao.png" class="sombra-footer" alt="sombra-footer">
+		<div id="logo-footer">
+			<img src="/images/logo-footer.png" alt="logo">
+		</div>
+		<div class="fti-footer">
+			<span>FTI TECNOLOGIA</span>
+			<span>Todos os direitos reservados/ 
+				<text id="ano"></text>
+			</span>
+			<div class="divAddressFooter">
+				<a href="https://www.google.com.br/maps/place/FTI+Tecnologia/@-23.3192259,-51.165988,17z/data=!3m1!4b1!4m2!3m1!1s0x94eb44a23ad12a65:0x6aaec0816086bb73">
+					<img class="locationIco" src="/images/locationIco.png" alt="Localização icone">
+				</a>
+				<address class="addressFooter">
+					AVENIDA HIGIENÓPOLIS, 1100
+					<br>
+					Edif Pioneiros do Café / Londrina - Paraná
+					<br>
+					Telefone:<a href="tel:+554333231163">(43) 3323-1163</a>
+				</address>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/jscript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBunJFEL8ThMp0KFWs5kK_WuSJEFDSkv2Y&sensor=false"></script>
 
 </body>
 </html>
