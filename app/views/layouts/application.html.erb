@@ -46,7 +46,7 @@
 	<!-- HEADER -->
 	<header>
 		<div class="content">
-			<a href="index.html">
+			<a data-no-turbolink='true' href="/">
 				<img src="/images/logo.png" alt="logo" id="logo">
 			</a>            
 			<img src="/images/sombra-menu.png" class="sombra-menu" alt="sombra-menu">
@@ -63,33 +63,33 @@
 	<%= yield %>
 
 	<!-- FOOTER -->	
-	
-	<div id="footer">
-		<img src="/images/sombra-divisao.png" class="sombra-footer" alt="sombra-footer">
-		<div id="logo-footer">
-			<img src="/images/logo-footer.png" alt="logo">
-		</div>
-		<div class="fti-footer">
-			<span>FTI TECNOLOGIA</span>
-			<span>Todos os direitos reservados/ 
-				<text id="ano"></text>
-			</span>
-			<div class="divAddressFooter">
-				<a href="https://www.google.com.br/maps/place/FTI+Tecnologia/@-23.3192259,-51.165988,17z/data=!3m1!4b1!4m2!3m1!1s0x94eb44a23ad12a65:0x6aaec0816086bb73">
-					<img class="locationIco" src="/images/locationIco.png" alt="Localização icone">
-				</a>
-				<address class="addressFooter">
-					AVENIDA HIGIENÓPOLIS, 1100
-					<br>
-					Edif Pioneiros do Café / Londrina - Paraná
-					<br>
-					Telefone:<a href="tel:+554333231163">(43) 3323-1163</a>
-				</address>
+	<div class="content">
+		<div id="footer">
+			<img src="/images/sombra-divisao.png" class="sombra-footer" alt="sombra-footer">
+			<div id="logo-footer">
+				<img src="/images/logo-footer.png" alt="logo">
+			</div>
+			<div class="fti-footer">
+				<span>FTI TECNOLOGIA</span>
+				<span>Todos os direitos reservados/ 
+					<text id="ano"></text>
+				</span>
+				<div class="divAddressFooter">
+					<a href="https://www.google.com.br/maps/place/FTI+Tecnologia/@-23.3192259,-51.165988,17z/data=!3m1!4b1!4m2!3m1!1s0x94eb44a23ad12a65:0x6aaec0816086bb73">
+						<img class="locationIco" src="/images/locationIco.png" alt="Localização icone">
+					</a>
+					<address class="addressFooter">
+						AVENIDA HIGIENÓPOLIS, 1100
+						<br>
+						Edif Pioneiros do Café / Londrina - Paraná
+						<br>
+						Telefone:<a href="tel:+554333231163">(43) 3323-1163</a>
+					</address>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<script type="text/jscript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBunJFEL8ThMp0KFWs5kK_WuSJEFDSkv2Y&sensor=false"></script>
+	<script type="text/jscript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBunJFEL8ThMp0KFWs5kK_WuSJEFDSkv2Y&sensor=false"></script>
 
 </body>
 </html>

@@ -1,0 +1,26 @@
+<div class="banner">
+    <div class="content">
+        <img src="/images/clientesBanner.png" />
+        <span>/ CLIENTES E PARCEIROS</span>
+    </div>
+</div>
+<div class="content">
+    <ul class="clientes">
+        <% @clients.each do |client| %>
+        <li>
+            <div class="cliente">
+                <div class="logo-cliente">
+                    <img src="<%= client.logo %>">
+                </div>
+                <section>
+                    <h2><%= client.name %></h2>
+                    <p><%= client.description %></p>
+                </section>
+            </div>
+            <% if client != @clients.last %>
+            <img src="/images/sombra-divisao.png" alt="sombra-divisao">
+            <% end %>
+        </li>
+        <% end %>
+    </ul>
+</div>
