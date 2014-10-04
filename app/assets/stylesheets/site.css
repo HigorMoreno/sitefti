@@ -157,7 +157,7 @@ header nav ul li a div span{
     display: inline;
     padding-top: 65px;
     padding-left: 30px;
-    width: 615px;
+    width: 730px;
     height: 160px;
     color: #5d5d5d;
 }
@@ -180,7 +180,7 @@ header nav ul li a div span{
 .imagem-slide {
     float: left;
     padding-top: 35px;
-    padding-left: 165px;
+    padding-left: 50px;
 }
 
 .imagem-slide img{
@@ -335,15 +335,15 @@ header nav ul li a div span{
     float: left;
     width: 100%;
     font-size: 18px;
-    margin-top: 75px;
-    margin-bottom: 3px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .evento-info p{
     float: left;
     width: 100%;
     font-size: 12px;
-    height: 60px;
+    height: 100px;
 }
 .evento-info a{
     float: left;

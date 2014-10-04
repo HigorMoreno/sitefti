@@ -4,28 +4,7 @@
 <section id="box-featured" >
 	<div id="featured"  >
 
-		<% @courses.each do |course| %>
-		<div style="background-color: <%= course.background_color %>;">
-			<div class="slide_fixed" >
-				<div class="imagem-slide">
-					<img src="<%= course.logo %>" />
-				</div>
-				<div class="conteudo-slide" >
-					<a href="solucoes.html">
-						<label class="titulo_slide" >
-							<%= course.name %>
-						</label>
-
-						<label class="descricao_slide">
-							<%= course.short_description %>
-						</label>
-					</a>	
-				</div>
-
-			</div>
-		</div>
-
-		<% end %>
+		<%= render partial: "course", locals: { course: @courses } %>
 		
 	</div>
 </section>
@@ -37,7 +16,7 @@
 	<!-- SOLUÇÕES -->
 	<section id="nossas-solucoes">
 		<div class="solucoes">
-			<h3 class="titulo"><span></span>NOSSAS SOLUÇÕES</h3>
+			<h3 class="titulo">NOSSAS SOLUÇÕES</h3>
 			<ul>
 				<li>
 					<div class="solucao">
@@ -67,39 +46,9 @@
 		</div>
 
 		<div class="noticias">
-			<label class="titulo-noticias"><span> </span>Ultimas Novidades</label>
-			<ul>
-				<li>
-					<a href="eventos.html">
-						<div class="noticia">
-							<span class="noticia-data">12/05</span>
-							-
-							<span class="noticia-descricao">Curso de Cobol - Vagas Limitadas</span>
-						</div>	
-					</a>					
-				</li>
 
-				<li>
-					<a href="eventos.html">
-						<div class="noticia">							
-							<span class="noticia-data">15/05</span>
-							-
-							<span>Vaga para Analista Desenvolvedor .NET e Delphi</span>
-						</div>		
-					</a>				
-				</li>
+			<%= render partial: "new", locals: { new: @news } %>
 
-				<li>
-					<a href="eventos.html">
-						<div class="noticia">							
-							<span class="noticia-data">23/05</span>
-							-
-							<span class="noticia-descricao">FTI reformula identidade pessoal e lança novo portal</span>
-						</div>
-					</a>			
-				</li>
-			</ul>
-			<a href="eventos.html" class="ver-todas-noticias"><span> </span>Ver Todas</a>
 		</div>		
 
 		<img src="/images/sombra-divisao.png" alt="sombra-divisao">
@@ -107,30 +56,7 @@
 
 	<!-- EVENTOS -->
 	<section id="eventos">
-		<div class="box-container">
-			<h3 class="titulo"><span> </span>EVENTOS</h3>	
-			<div id="nav-eventos"></div>	
-			<ul id="banner-eventos">
-				<li class="evento">
-					<img src="/images/imagem-feira.png" class="evento-imagem" alt="feira">	
-					<div class="evento-info">
-						<label>Feira de Informática</label>	
-						<p>75% do e-commerce nacional; 60 milhões de transações processadas</p>	
-						<a href="eventos.html">Leia mais</a>	
-					</div>
-				</li>
-
-				<li class="evento">
-					<img src="/images/imagem-ufpr.png" class="evento-imagem" alt="ufpr">	
-					<div class="evento-info">
-						<label>Palestra na UTFPR</label>	
-						<p>75% do e-commerce nacional; 60 milhões de transações processadas</p>	
-						<a href="eventos.html">Leia mais</a>	
-					</div>
-				</li>	
-				
-			</ul>		
-		</div>			
+		<%= render partial: "event", locals: { event: @events } %>	
 	</section> 
 
 	<!-- ENDERECO -->

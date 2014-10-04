@@ -1,0 +1,16 @@
+<div class="box-container">
+	<h3 class="titulo">EVENTOS</h3>	
+	<div id="nav-eventos"></div>	
+	<ul id="banner-eventos">
+		<% @events.each do |event| %>
+		<li class="evento">
+			<img src="<%= event.image %>" class="evento-imagem">	
+			<div class="evento-info">
+				<label><%= event.title %></label>	
+				<p><%= event.short_description[0..230] %></p>	
+				<a href="eventos.html">Leia mais</a>	
+			</div>
+		</li>
+		<% end %>
+	</ul>		
+</div>

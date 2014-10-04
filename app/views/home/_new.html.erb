@@ -1,0 +1,15 @@
+<label class="titulo-noticias">Ultimas Novidades</label>
+<ul>
+	<% @news.each do |new| %>
+	<li>
+		<a href="eventos.html">
+			<div class="noticia">
+				<span class="noticia-data"><%= new.created_at.strftime("%d/%m") %></span>
+				-
+				<span class="noticia-descricao"><%= new.description %></span>
+			</div>	
+		</a>					
+	</li>
+	<% end %>
+</ul>
+<a href="eventos.html" class="ver-todas-noticias"><span> </span>Ver Todas</a>

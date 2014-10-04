@@ -1,0 +1,21 @@
+<% @courses.each do |course| %>
+<div style="background-color: <%= course.background_color %>;">
+	<div class="slide_fixed" >
+		<div class="imagem-slide">
+			<img src="<%= course.logo %>" />
+		</div>
+		<div class="conteudo-slide" >
+			<a href="solucoes.html">
+				<label class="titulo_slide" >
+					<%= course.name %>
+				</label>
+
+				<label class="descricao_slide">
+					<%= course.short_description %>
+				</label>
+			</a>	
+		</div>
+
+	</div>
+</div>
+<% end %>
