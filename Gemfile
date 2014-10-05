@@ -17,6 +17,8 @@ gem 'rails_admin'
 gem 'devise'
 gem 'ckeditor'
 gem "paperclip", "~> 4.2"
+gem 'mail_form'
+gem 'simple_form'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

@@ -71,3 +71,8 @@ function initialize() {
     });
 
 }
+
+$(document).ready(function () {          
+    google.maps.event.addDomListener(window, 'load', initialize);
+    initialize();
+});s

@@ -56,5 +56,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   resources :client, only: [:index]
+  match '/contact', to: 'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
   root 'home#index'
 end

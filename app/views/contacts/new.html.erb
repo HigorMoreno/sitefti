@@ -1,0 +1,55 @@
+<div class="banner">
+  <div class="content">
+    <img src="/images/contatoBanner.jpg" />
+    <span>/ ENTRE EM CONTATO</span>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="info-contato">
+    <section>
+      <h4>
+        Entre em Contato
+      </h4>
+      <p>
+        Utilize o formulário abaixo para entrar em contato com a FTI Tecnologia, você também pode optar por enviar um email para <a href="mailto:contato@ftitecnologia.com.br" ><b>contato@ftitecnologia.com.br</b></a>, ou ligar para (043)<b> 3323-1163</b>
+      </p>
+    </section>
+  </div>
+
+
+
+  <div class="formulario-contato">
+    <%= simple_form_for @contact do |f| %>
+    <div class="esquerda">
+      <%= f.input :nome, :required => true %>
+      <%= f.input :email, :required => true %>
+      <%= f.input :cidade, :required => true %>
+    </div>
+    <div class="form-right">
+      <%= f.input :assunto, :required => true %>
+      <%= f.input :mensagem, :as => :text, :required => true %>
+    </div>
+    <% flash.each do |key, value| %>
+    <div>
+      <%= value %>
+    </div>
+    <% end %>
+    <%= f.button :submit, 'Enviar', :class=> "btnEnviar" %>
+  </div>
+  <% end %>
+  <div class="googleMaps">
+    <div class="mapCanvasContato" id="map-canvas">
+    </div>
+    <div class="enderecoContato">
+      <p>/FAÇA-NOS UMA VISITA!</p>
+      <address>AVENIDA HIGIENÓPOLIS, 1100</address>
+      <address>Edif Pioneiros do Café, 2º Andar - salas 21 e 22 / LONDRINA - PARANÁ</address>
+    </div>
+
+  </div>
+</div>
+
+
+

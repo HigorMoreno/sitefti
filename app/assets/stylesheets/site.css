@@ -75,6 +75,25 @@ body {
     cursor: pointer;  
 }
 
+.banner{
+    width: 100%;
+    height: 160px;
+    background-color: #f5f5f5;
+    float: left;
+
+}
+
+.banner .content img{
+    float: left;
+}
+
+.banner .content span{
+    float: right;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 70px;
+}
+
 /**==========MENU==========**/
 header{
     float:left;
@@ -500,119 +519,60 @@ address p{
 ================================================== */
 
 /* ================= CONTATO ================= */
-
-.banner{
-    width: 100%;
-    height: 160px;
-    background-color: #f5f5f5;
-    float: left;
-
-}
-
-.banner .content img{
+.info-contato section{
+    width: 648px;
     float: left;
 }
 
-.banner .content span{
-    float: right;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin-top: 70px;
+.info-contato section h4{
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.contentContato{
-    float: left;
-    width: 100%;
-    height: 610px;
-}
-
-.divContato{
-    width: 970px;
-    height: 563px;
-    margin-top: 15px;
-}
-
-.tituloContato{
-    font-size: 0px;
-    font-weight: none;
-}
-
-.textoContato{
+.info-contato section p{
     font-size: 14px;
 }
 
-.divTextoSup{
+.info-contato{
+    float:left;
     width: 960px;
-    height: 58px;
+    margin-top: 15px;
 }
 
-.divInput{
-    width: 550px;
+.formulario-contato{
+    width: 535px;
     height: 264px;
     margin-top: 32px;
     float: left;
 }
 
-.inputPadrao
-{
+.formulario-contato label{
+    font-size: 16px;
+    font-weight: bold;
+    display: block
+}
+
+.formulario-contato input[type="text"],input[type="email"] {
     border: solid 1px;
     border-left: solid 3px #782919;
     width: 250px;
     height: 40px;
+    font-size:16px;
+    margin-bottom: 5px;
 }
 
-.inputMessage{
-    width: 250px;
-    height: 110px;
+.formulario-contato textarea{
     border: solid 1px;
     border-left: solid 3px #782919;
+    width: 250px;
+    height: 105px;
+    font-size:18px;
+    margin-bottom: 5px;
 }
 
-.inputEsquerdo{
+.formulario-contato .esquerda{
+    float:left;
     width: 280px;
-    height: 215px;
-    float: left;
-}
-
-.inputEsquerdo p{
-    font-size: 16px;
-    font-weight: bolder;
-}
-
-.inputDireito{
-    width: 270px;
-    height: 215px;
-    float: right;
-}
-
-.inputDireito p{
-    font-size: 16px;
-    font-weight: bolder;
-}
-
-.bot{
-    width: 535px;
-    height: 49px;
-    float: left;
-}
-
-.right{
-    float: right;
-}
-
-#pMensagemEnviada{
-    font-size: 16px;
-    float: left;
-    margin: 6px 0px 0px 208px;
-}
-
-.Psecundario{
-    margin-top: 10px;
-}
-
-.entreEmContato{
-    width: 648px;
-    float: left;
 }
 
 .btnEnviar{
@@ -624,12 +584,14 @@ address p{
     color: #FFF;
     cursor: pointer;
     padding-left: 15px;
+    float: right;
 }
 
 .googleMaps{
     width: 390px;
     height: 392px;
     margin-top: 50px;
+    margin-bottom: 30px;
     float: right;
 }
 
